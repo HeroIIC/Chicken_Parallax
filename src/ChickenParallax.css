@@ -1,0 +1,72 @@
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  
+        nav {
+             position: absolute;
+             z-index: 10;
+             align-items: center;
+             width: 80%; 
+             display: flex;
+            color: var(--lightShades);
+             ul{
+                 display: flex;
+                list-style: none;
+                margin: auto;
+                
+                li {
+                    margin: 0 20px;
+                    padding: 5px 15px;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                    border-radius: 20px;
+
+                    & :first-child{
+                        background: var(--lighShades);
+                        color: var(--mainColor);
+                }
+                @media screen and (max-width:850px) {
+                    font-size:1rem;
+                    margin: 0 5px;
+                }
+                }
+                    }
+                h2 {
+                    font-size: 3rem;
+                @media screen and (max-width:850px) {
+                    display: none;
+                }
+                }
+            }
+  
+ #parallaxContainer{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: var(--sunset);
+    max-height: 100vh;
+    left: 0;
+ }
+ .parallaxLayer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+ }
+}
+h1{
+    color: var(--lighShades);
+    font-size: 3rem;
+    top: 20%;
+    text-align: center;
+
+    @media screen and (max-width:850px){
+        font-size: 1.5rem;
+        right: 5%;
+    }
+
+}
